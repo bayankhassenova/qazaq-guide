@@ -1,6 +1,6 @@
 # 🏔️ Qazaq Guide: a RAG-based AI travel assistant for Kazakhstan
 
-> **Demo video:** _VIDEO_LINK_HERE_
+> **Demo video:** https://youtu.be/oF4PmKiHcvA
 >
 > Module 3 practical task "Development of RAG-based AI system", EPAM Gen AI for Software Development (Tech Orda).
 
