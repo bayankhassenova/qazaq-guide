@@ -1,0 +1,16 @@
+# Local vector database: Qdrant (free, open source).
+# Start:  docker compose up -d      Stop:  docker compose down
+# Dashboard: http://localhost:6333/dashboard
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.20.0
+    container_name: qazaq-guide-qdrant
+    ports:
+      - "6333:6333"   # REST API + web dashboard
+      - "6334:6334"   # gRPC API
+    volumes:
+      - qdrant_data:/qdrant/storage   # data survives container restarts
+    restart: unless-stopped
+
+volumes:
+  qdrant_data:
